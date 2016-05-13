@@ -7,3 +7,4 @@ C:\Users\Peter Andersson\documents\visual studio 2010\Projects\SandviksProjekt\S
 C:\Users\Peter Andersson\documents\visual studio 2010\Projects\SandviksProjekt\SpelMannen\obj\x86\Debug\SpelMannen.xml
 C:\Users\Peter Andersson\documents\visual studio 2010\Projects\SandviksProjekt\SpelMannen\obj\x86\Debug\SpelMannen.pdb
 C:\Users\Peter Andersson\documents\visual studio 2010\Projects\SandviksProjekt\SpelMannen\obj\x86\Debug\SpelMannen.MainForm.resources
+C:\Users\Peter Andersson\Documents\Visual Studio 2010\Projects\SandviksProjekt\SpelMannen\obj\x86\Debug\SpelMannen.Framsidan.resources

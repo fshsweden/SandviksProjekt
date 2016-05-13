@@ -28,14 +28,14 @@ Partial Class MainForm
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.lblPoäng = New System.Windows.Forms.Label()
+        Me.SenasteSvar = New System.Windows.Forms.Label()
+        Me.Points = New System.Windows.Forms.Label()
+        Me.HighScore1 = New System.Windows.Forms.Label()
+        Me.HighScore2 = New System.Windows.Forms.Label()
+        Me.HighScore3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -82,69 +82,98 @@ Partial Class MainForm
         Me.PictureBox4.TabIndex = 3
         Me.PictureBox4.TabStop = False
         '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(77, 298)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(51, 17)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Label1"
-        '
         'Timer1
         '
+        Me.Timer1.Interval = 1000
         '
-        'Timer2
+        'lblPoäng
         '
+        Me.lblPoäng.AutoSize = True
+        Me.lblPoäng.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblPoäng.Location = New System.Drawing.Point(407, 388)
+        Me.lblPoäng.Name = "lblPoäng"
+        Me.lblPoäng.Size = New System.Drawing.Size(268, 91)
+        Me.lblPoäng.TabIndex = 5
+        Me.lblPoäng.Text = "Poäng"
+        '
+        'SenasteSvar
+        '
+        Me.SenasteSvar.AutoSize = True
+        Me.SenasteSvar.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SenasteSvar.Location = New System.Drawing.Point(-4, 209)
+        Me.SenasteSvar.Name = "SenasteSvar"
+        Me.SenasteSvar.Size = New System.Drawing.Size(0, 91)
+        Me.SenasteSvar.TabIndex = 4
+        '
+        'Points
+        '
+        Me.Points.AutoSize = True
+        Me.Points.Font = New System.Drawing.Font("Microsoft Sans Serif", 48.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Points.Location = New System.Drawing.Point(717, 400)
+        Me.Points.Name = "Points"
+        Me.Points.Size = New System.Drawing.Size(83, 91)
+        Me.Points.TabIndex = 4
+        Me.Points.Text = "0"
+        '
+        'HighScore1
+        '
+        Me.HighScore1.AutoSize = True
+        Me.HighScore1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HighScore1.Location = New System.Drawing.Point(12, 338)
+        Me.HighScore1.Name = "HighScore1"
+        Me.HighScore1.Size = New System.Drawing.Size(115, 25)
+        Me.HighScore1.TabIndex = 4
+        Me.HighScore1.Text = "HighScore1"
+        '
+        'HighScore2
+        '
+        Me.HighScore2.AutoSize = True
+        Me.HighScore2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HighScore2.Location = New System.Drawing.Point(12, 363)
+        Me.HighScore2.Name = "HighScore2"
+        Me.HighScore2.Size = New System.Drawing.Size(115, 25)
+        Me.HighScore2.TabIndex = 4
+        Me.HighScore2.Text = "HighScore2"
+        '
+        'HighScore3
+        '
+        Me.HighScore3.AutoSize = True
+        Me.HighScore3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HighScore3.Location = New System.Drawing.Point(12, 388)
+        Me.HighScore3.Name = "HighScore3"
+        Me.HighScore3.Size = New System.Drawing.Size(115, 25)
+        Me.HighScore3.TabIndex = 4
+        Me.HighScore3.Text = "HighScore3"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(80, 347)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(12, 313)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(51, 17)
-        Me.Label2.TabIndex = 5
-        Me.Label2.Text = "Label2"
-        '
-        'Timer3
-        '
-        '
-        'Timer4
-        '
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(597, 443)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(222, 45)
-        Me.Button1.TabIndex = 6
-        Me.Button1.Text = "Hjälp"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(597, 217)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(222, 45)
-        Me.Button2.TabIndex = 7
-        Me.Button2.Text = "Starta spelet!"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Label2.Size = New System.Drawing.Size(150, 25)
+        Me.Label2.TabIndex = 4
+        Me.Label2.Text = "HIGH SCORES"
         '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(876, 500)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(844, 500)
+        Me.Controls.Add(Me.lblPoäng)
+        Me.Controls.Add(Me.Points)
+        Me.Controls.Add(Me.SenasteSvar)
+        Me.Controls.Add(Me.HighScore3)
+        Me.Controls.Add(Me.HighScore2)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.HighScore1)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Name = "MainForm"
-        Me.Text = "Form2"
+        Me.Text = "Spel Mannen"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
@@ -157,12 +186,12 @@ Partial Class MainForm
     Friend WithEvents PictureBox2 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox3 As System.Windows.Forms.PictureBox
     Friend WithEvents PictureBox4 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Timer1 As System.Windows.Forms.Timer
-    Friend WithEvents Timer2 As System.Windows.Forms.Timer
+    Friend WithEvents lblPoäng As System.Windows.Forms.Label
+    Friend WithEvents SenasteSvar As System.Windows.Forms.Label
+    Friend WithEvents Points As System.Windows.Forms.Label
+    Friend WithEvents HighScore1 As System.Windows.Forms.Label
+    Friend WithEvents HighScore2 As System.Windows.Forms.Label
+    Friend WithEvents HighScore3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Timer3 As System.Windows.Forms.Timer
-    Friend WithEvents Timer4 As System.Windows.Forms.Timer
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
 End Class
